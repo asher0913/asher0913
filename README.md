@@ -7,6 +7,17 @@ Nottingham.
 
 [Website](https://asher0913.github.io) · [Résumé](https://asher0913.github.io/Yixuan_Zhang_Resume.pdf) · [LinkedIn](https://www.linkedin.com/in/yixuan-zhang-b656392b5)
 
+## Start here
+
+| If you are hiring for | Look at | What to check |
+|---|---|---|
+| Software engineering | [multi-material-slicer](https://github.com/asher0913/multi-material-slicer), [code-task-forge](https://github.com/asher0913/code-task-forge) | a C++17/Qt/OpenGL desktop app with a headless import-to-G-code self-test in CI; a shell-free, time-limited patch runner behind a CLI, FastAPI and Docker |
+| Machine learning engineering | [DualPathCEM](https://github.com/asher0913/DualPathCEM), [edge-quantization-lab](https://github.com/asher0913/edge-quantization-lab), [recsys-ranking-lab](https://github.com/asher0913/recsys-ranking-lab) | an audited research snapshot; quantization with `./scripts/demo.sh` rerunning every number and claim; a two-stage recommender on MovieLens-100K |
+| LLM systems and agents | [inference-lab](https://github.com/asher0913/inference-lab), [secure-rag](https://github.com/asher0913/secure-rag), [skill-router](https://github.com/asher0913/skill-router) | batching, coalescing and semantic caching for LLM serving; permission checks in RAG; tool routing measured on held-out phrasing |
+
+Each README says which results come from real data, synthetic data or simulation, and which of
+them CI reruns.
+
 ## Research
 
 | | |
@@ -35,7 +46,7 @@ results checked in CI. Synthetic benchmarks are labelled as such in each README.
 **Serving and systems**
 - [tiered-kv-cache-lab](https://github.com/asher0913/tiered-kv-cache-lab): KV prefix caching across HBM, DRAM and NVMe, with capacity planning up to 14.5 req/s within the TTFT SLO.
 - [ai-gateway-control-plane](https://github.com/asher0913/ai-gateway-control-plane): budgets, circuit breakers and latency-aware routing; p99 latency 14.3 s → 5.8 s under fault injection.
-- [edge-quantization-lab](https://github.com/asher0913/edge-quantization-lab): INT8/INT4 post-training quantization, mixed-precision search at 6.4× compression, and a bit-exact integer kernel.
+- [edge-quantization-lab](https://github.com/asher0913/edge-quantization-lab): INT8/INT4 post-training quantization. The mixed-precision search reaches 6.7× compression and matches the exhaustive optimum on all 5 seeds. An integer-only kernel agrees with simulation on every prediction.
 - [vision-pipeline-orchestrator](https://github.com/asher0913/vision-pipeline-orchestrator): CPU/GPU pipeline simulator with batching, backpressure, a dead-letter queue and autoscaling.
 
 **Agents and evaluation**
