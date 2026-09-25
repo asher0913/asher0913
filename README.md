@@ -34,7 +34,7 @@ them CI reruns.
 | [**inference-lab**](https://github.com/asher0913/inference-lab) | LLM serving front end for vLLM, SGLang and Ollama. Request coalescing cuts backend generations **16 → 3**. A labelled study shows semantic caches serving wrong answers, and a simulation shows continuous batching sustaining **10×** the load of static batching. |
 | [**secure-rag**](https://github.com/asher0913/secure-rag) | Permission-aware multi-tenant RAG. After ACL changes, a stale-index pre-filter leaks on **54%** of queries; a live re-check against the directory of record brings that to **0%**. |
 | [**code-task-forge**](https://github.com/asher0913/code-task-forge) | SWE-bench-style harness for judging coding-agent patches. Exit codes accept 25 of 78 wrong patches; restored tests plus held-out tests accept none. |
-| [**plant-leaf-recognition**](https://github.com/asher0913/plant-leaf-recognition) | ResNet-101 and ViT-B/16 feature fusion: **98.46%** top-1 on 100 leaf species over 20 splits. |
+| [**plant-leaf-recognition**](https://github.com/asher0913/plant-leaf-recognition) | ResNet-101 and ViT-B/16 feature fusion: **98.46%** top-1 on 100 leaf species, reported from the original run over 20 unstratified splits. |
 | [**oxford-pet-classification**](https://github.com/asher0913/oxford-pet-classification) | 37 breeds: fine-tuned ResNet-18 at **89.8%** against a from-scratch SE-ResNet at 49.7%, with a one-change-per-row ablation and Grad-CAM. |
 | [**IAMABOT**](https://github.com/asher0913/IAMABOT) | MechMania 32 bot, built from the game engine's Rust source; climbed from 7th to **3rd** on the live leaderboard. |
 
